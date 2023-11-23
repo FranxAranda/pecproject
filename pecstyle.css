@@ -1,0 +1,136 @@
+/* Estilos para el body (fondo y color del texto) */
+body {
+  background: url('twinpeaks1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 40px;
+  display: block;
+  border: 1px solid #333;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Estilos para el título */
+.title {
+  color: white;
+}
+
+/* Estilos para el enlace */
+.transparent-box {
+  color: white;
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  background-color: rgba(192, 192, 192, 0.8);
+}
+
+.transparent-box a {
+  color: white;
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  background-color: rgba(192, 192, 192, 0.8);
+}
+
+/* Estilos para el primer header */
+.primer-header {
+  background-color: rgba(192, 192, 192, 0.8); /* Plateado claro transparente */
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Estilos para la navegación del primer header */
+.primer-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.primer-header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.primer-header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+  h1 {
+      font-size: 22px;
+  }
+  h2 {
+      font-size: 18px;
+  }
+  h3 {
+      font-size: 16px;
+  }
+  p {
+      font-size: 14px;
+  }
+
+  img {
+    max-width: 100%; /* Para que las imágenes no se desborden del contenedor */
+    height: auto; /* Para mantener la proporción de aspecto de la imagen */
+  }
+}
+
+.swiper-container {
+  width: 60%; /* Puedes ajustar el ancho según tus necesidades */
+  margin: auto;
+}
+
+.swiper-slide img {
+  width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+  height: auto;
+}
+
+#formulario-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  text-align: center;
+}
+
+#formulario-container h1 {
+  color: #333;
+}
+
+#formulario-container label {
+  display: block;
+  margin: 10px 0;
+  color: #333;
+}
+
+#formulario-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+#formulario-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#formulario-container button:hover {
+  background-color: #45a049;
+}
