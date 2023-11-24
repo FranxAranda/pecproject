@@ -1,12 +1,14 @@
-/* Estilos para el body (fondo y color del texto) */
+
 body {
   background: url('twinpeaks1.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   font-family: Arial, sans-serif;
+  text-decoration:none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
-/* Estilos para el encabezado h1 */
+
 h1 {
   font-size: 36px;
   text-align: center;
@@ -19,33 +21,32 @@ h1 {
   max-width: 600px;
 }
 
-/* Estilos para el título */
+
 .title {
   color: white;
 }
 
-/* Estilos para el enlace */
+
 .transparent-box {
   color: white;
-  text-decoration: none; /* Elimina el subrayado predeterminado */
+  text-decoration: none; 
   background-color: rgba(192, 192, 192, 0.8);
 }
 
 .transparent-box a {
   color: white;
-  text-decoration: none; /* Elimina el subrayado predeterminado */
+  text-decoration: none;
   background-color: rgba(192, 192, 192, 0.8);
 }
 
-/* Estilos para el primer header */
+
 .primer-header {
-  background-color: rgba(192, 192, 192, 0.8); /* Plateado claro transparente */
-  color: #fff;
+  background-color: rgba(192, 192, 192, 0.8); 
   padding: 10px 0;
   text-align: center;
 }
 
-/* Estilos para la navegación del primer header */
+
 .primer-header nav ul {
   list-style: none;
   margin: 0;
@@ -80,57 +81,106 @@ h1 {
   }
 
   img {
-    max-width: 100%; /* Para que las imágenes no se desborden del contenedor */
-    height: auto; /* Para mantener la proporción de aspecto de la imagen */
+    max-width: 100%; 
+    height: auto; 
   }
 }
 
-.swiper-container {
-  width: 60%; /* Puedes ajustar el ancho según tus necesidades */
-  margin: auto;
-}
-
-.swiper-slide img {
-  width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
-  height: auto;
-}
 
 #formulario-container {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  width: 400px;
-  text-align: center;
+  text-align: center; /* Centra el texto y los elementos en el contenedor */
+  margin: auto; /* Centra el contenedor en la página */
+  max-width: 400px; /* Establece un ancho máximo para el contenedor, ajusta según sea necesario */
+  padding: 20px; /* Añade un poco de espacio alrededor del contenido, ajusta según sea necesario */
+  background-color: rgba(192, 192, 192, 0.5); /* Fondo plateado transparente */
 }
 
 #formulario-container h1 {
-  color: #333;
+  font-size: 1.5em; /* Tamaño de la fuente para el título, ajusta según sea necesario */
+}
+
+#formulario-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #formulario-container label {
-  display: block;
-  margin: 10px 0;
-  color: #333;
+  margin-bottom: 5px; /* Añade un pequeño espacio entre las etiquetas y los campos de entrada */
 }
 
 #formulario-container input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 8px; /* Añade un poco de espacio dentro de los campos de entrada, ajusta según sea necesario */
+  margin-bottom: 15px; /* Añade espacio entre los campos de entrada */
 }
 
 #formulario-container button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+  background-color: #333; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px; /* Añade espacio alrededor del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
 }
 
 #formulario-container button:hover {
-  background-color: #45a049;
+  background-color: #555; /* Cambia el color de fondo al pasar por encima del botón */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; 
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color:#ffffff;
+}
+
+#contenedor {
+  position: relative;
+}
+
+#texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.intro {
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+  background-color: rgba(192, 192, 192, 0.5); /* Fondo plateado transparente */
+  padding: 20px;
+}
+
+.intro h1 {
+  font-size: 2em;
+}
+
+.intro h2 {
+  font-size: 1.5em;
+}
+
+.intro p {
+  font-size: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
